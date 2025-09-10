@@ -7,8 +7,9 @@ import UseCases from './components/UseCases';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import Developers from './components/Developers';
 
-export type Page = 'home' | 'products';
+export type Page = 'home' | 'products' | 'developers';
 
 const App: React.FC = () => {
   const [page, setPage] = React.useState<Page>('home');
@@ -19,7 +20,7 @@ const App: React.FC = () => {
       setTimeout(() => {
         document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
       }, 50);
-    } else if (newPage === 'products') {
+    } else {
         window.scrollTo(0, 0);
     }
   };
@@ -45,6 +46,7 @@ const App: React.FC = () => {
             </>
           )}
           {page === 'products' && <Products />}
+          {page === 'developers' && <Developers />}
           <CTA />
         </main>
         <Footer setPage={handleSetPage} />

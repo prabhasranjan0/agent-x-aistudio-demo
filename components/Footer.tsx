@@ -22,10 +22,17 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
             <h4 className="font-semibold text-slate-200 mb-4">Product</h4>
             <ul className="space-y-2">
               <li><button onClick={() => setPage('products')} className="text-slate-400 hover:text-white text-left">Products</button></li>
-              <li><button onClick={() => setPage('home', 'features')} className="text-slate-400 hover:text-white text-left">Features</button></li>
+              <li><button onClick={() => setPage('home', 'features')} className="text-slate-400 hover:text-white text-left">Solutions</button></li>
               <li><a href="#" className="text-slate-400 hover:text-white">Pricing</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white">Changelog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold text-slate-200 mb-4">Resources</h4>
+             <ul className="space-y-2">
+              <li><button onClick={() => setPage('developers')} className="text-slate-400 hover:text-white text-left">Developers</button></li>
               <li><a href="#" className="text-slate-400 hover:text-white">Docs</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white">Changelog</a></li>
+              <li><a href="#" className="text-slate-400 hover:text-white">Blog</a></li>
             </ul>
           </div>
           <div>
@@ -33,13 +40,7 @@ const Footer: React.FC<FooterProps> = ({ setPage }) => {
             <ul className="space-y-2">
               <li><a href="#" className="text-slate-400 hover:text-white">About Us</a></li>
               <li><a href="#" className="text-slate-400 hover:text-white">Careers</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white">Blog</a></li>
               <li><a href="#" className="text-slate-400 hover:text-white">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-slate-200 mb-4">Legal</h4>
-            <ul className="space-y-2">
               <li><a href="#" className="text-slate-400 hover:text-white">Privacy Policy</a></li>
               <li><a href="#" className="text-slate-400 hover:text-white">Terms of Service</a></li>
             </ul>

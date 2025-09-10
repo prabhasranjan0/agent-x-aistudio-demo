@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ setPage }) => {
         <nav className="hidden md:flex items-center space-x-6">
           <button onClick={() => setPage('products')} className="text-slate-300 hover:text-white transition-colors">Products</button>
           <button onClick={() => setPage('home', 'features')} className="text-slate-300 hover:text-white transition-colors">Solutions</button>
-          <button onClick={() => setPage('home', 'how-it-works')} className="text-slate-300 hover:text-white transition-colors">Developers</button>
+          <button onClick={() => setPage('developers')} className="text-slate-300 hover:text-white transition-colors">Developers</button>
           <a href="#" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
         </nav>
         <a href="#" className="hidden md:inline-block bg-white text-slate-900 font-semibold px-5 py-2 rounded-lg hover:bg-slate-200 transition-colors">
